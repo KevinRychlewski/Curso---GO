@@ -14,6 +14,7 @@ func Gerar() *cli.App {
 	app.Name = "Aplicação de Linha de Comando"
 	app.Usage = "Busca IPs e Nomes de Servidor na Internet"
 
+	// Aqui você passa as flags que você usa para a aplicação
 	flags := []cli.Flag{
 				cli.StringFlag{
 					Name: "host",
