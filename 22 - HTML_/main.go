@@ -20,7 +20,7 @@ func main() {
 
 	http.HandleFunc("/home", func(w http.ResponseWriter, r *http.Request){
 		// CRIANDO UM USUARIO
-		u := usuario{"Davi", "davi.felipe@gmail.com"}
+		u := usuario{"Davi", "davifelipe@gmail.com"}
 
 		templates.ExecuteTemplate(w, "home.html", u)
 	})
